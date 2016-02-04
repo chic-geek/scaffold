@@ -1,0 +1,151 @@
+///////////////////////////////////////////////////////////////////////////////
+// File: Forms
+///////////////////////////////////////////////////////////////////////////////
+//
+fieldset {
+  background-color: #F7F7F7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $scaffold-base-border-color;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: $scaffold-base-spacing-md;
+  margin-left: 0;
+  padding-top: $scaffold-base-spacing-lg;
+  padding-right: $scaffold-base-spacing-lg;
+  padding-bottom: $scaffold-base-spacing-lg;
+  padding-left: $scaffold-base-spacing-lg;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-famliy: $scaffold-base-font-family;
+  font-size: $scaffold-base-font-size;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: $scaffold-base-spacing-xs;
+}
+
+label.required:after {
+  content: "*";
+}
+
+label abbr {
+  display: none;
+}
+
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+select[multiple=multiple] {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $scaffold-base-border-color;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: $scaffold-base-font-family;
+  font-size: $scaffold-base-font-size;
+  margin-bottom: $scaffold-base-spacing-md;
+  padding-top: $scaffold-base-spacing-sm;
+  padding-right: $scaffold-base-spacing-sm;
+  padding-bottom: $scaffold-base-spacing-sm;
+  padding-left: $scaffold-base-spacing-sm;
+  transition: border-color 0.1s ease-in-out;
+  width: 100%;
+
+  &:hover {
+    border-color: darken($scaffold-base-border-color, 10%);
+  }
+
+  &:focus {
+    border-color: $scaffold-base-link-color;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06),0 0 5px #3770C0;
+    outline: none;
+  }
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  appearance: none;
+  background-color: $scaffold-base-link-color;
+  border-radius: $scaffold-base-button-radius;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $scaffold-base-font-family;
+  font-size: $scaffold-base-font-size;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  padding-top: $scaffold-base-spacing-md;
+  padding-right: 1em;
+  padding-bottom: $scaffold-base-spacing-md;
+  padding-left: 1em;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: $scaffold-base-link-color-hover;
+  color: white;
+}
+
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input[type="search"] {
+  appearance: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $scaffold-base-spacing-xs;
+}
+
+input[type="file"] {
+  padding-bottom: $scaffold-base-spacing-md;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  margin-bottom: $scaffold-base-spacing-lg;
+  max-width: 100%;
+  width: auto;
+}

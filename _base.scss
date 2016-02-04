@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////////////////////////
+// File: Base
+///////////////////////////////////////////////////////////////////////////////
+//
+html {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after,
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $scaffold-base-font-family;
+  font-size: $scaffold-base-font-size;
+  line-height: $scaffold-base-line-height;
+}

@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////////////////////////
+// File: Lists
+///////////////////////////////////////////////////////////////////////////////
+//
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.default {
+  list-style-type: disc;
+  margin-bottom: $scaffold-base-spacing-md;
+  padding-left: $scaffold-base-spacing-lg;
+}
+
+ol.default {
+  list-style-type: decimal;
+  margin-bottom: $scaffold-base-spacing-md;
+  padding-left: $scaffold-base-spacing-lg;
+}
+
+dl {
+  margin-bottom: $scaffold-base-spacing-md;
+}
+
+dl dt {
+  font-weight: bold;
+  margin-top: $scaffold-base-spacing-md;
+}
+
+dl dd {
+  margin: 0;
+}

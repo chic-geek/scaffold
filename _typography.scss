@@ -1,0 +1,77 @@
+///////////////////////////////////////////////////////////
+// File: Typography
+///////////////////////////////////////////////////////////
+//
+@if $scaffold-set-heading-sizes {
+  @for $i from 1 through 6 {
+    h#{$i},
+    .h#{$i} {
+      font-family: $scaffold-base-font-family;
+      line-height: 1.25;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: $scaffold-base-spacing-sm;
+    }
+  }
+
+  @each $key, $value in $scaffold-base-heading-sizes {
+    $scaffold-base-heading-size: nth($value, 1);
+
+    h#{$key},
+    .h#{$key} {
+      font-size: $scaffold-base-heading-size;
+    }
+  }
+}
+@else {
+  @for $i from 1 through 6 {
+    h#{$i},
+    .h#{$i} {
+      font-family: $scaffold-base-font-family;
+      font-size: $scaffold-base-font-size;
+      line-height: 1.25;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: $scaffold-base-spacing-sm;
+    }
+  }
+}
+
+
+p {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: $scaffold-base-spacing-md;
+}
+
+a {
+  color: $scaffold-base-link-color;
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+
+  &:hover {
+    color: $scaffold-base-link-color-hover;
+  }
+
+  &:focus,
+  &:active {
+    color: $scaffold-base-link-color-active;
+    outline: none;
+  }
+}
+
+hr {
+  border-top: none;
+  border-right: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $scaffold-base-border-color;
+  border-left: none;
+  margin-top: $scaffold-base-spacing-lg;
+  margin-right: 0;
+  margin-bottom: $scaffold-base-spacing-lg;
+  margin-left: 0;
+}

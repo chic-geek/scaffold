@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////////////////
+// File: Tables
+///////////////////////////////////////////////////////////////////////////////
+//
+table {
+  border-collapse: collapse;
+  margin-top: $scaffold-base-spacing-md;
+  margin-right: 0;
+  margin-bottom: $scaffold-base-spacing-md;
+  margin-left: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: darken($scaffold-base-border-color, 30%);
+  font-weight: bold;
+  padding-top: $scaffold-base-spacing-md;
+  padding-right: 0;
+  padding-bottom: $scaffold-base-spacing-md;
+  padding-left: 0;
+  text-align: left;
+}
+
+td {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $scaffold-base-border-color;
+  padding-top: $scaffold-base-spacing-md;
+  padding-right: 0;
+  padding-bottom: $scaffold-base-spacing-md;
+  padding-left: 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
